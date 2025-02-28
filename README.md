@@ -5,7 +5,10 @@ A Chrome extension that reads prompts entered in the ChatGPT chat window.
 ## Features
 
 - Monitors the ChatGPT input field for any text entered
-- Logs the prompt text to the console (for now)
+- Identifies any PII data in the prompt, replaces it with placeholders
+- When user submits the prompt, the masked prompt is sent to ChatGPT, solving the risk of sharing sensitive data with openai
+- The response returned by chatgpt is scanned for the placeholders, so that users can see the actual response without any hassle.
+
 
 ## Installation
 
