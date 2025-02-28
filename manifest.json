@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "ChatGPT Prompt Reader",
+  "version": "1.0",
+  "description": "Reads prompts entered in ChatGPT chat window and masks PII using NLP",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://chat.openai.com/*", "https://chatgpt.com/*"],
+      "js": ["dist/content.js"]
+    }
+  ]
+} 

@@ -1,0 +1,16 @@
+{
+  "name": "chatgpt-pii-detector",
+  "version": "1.0.0",
+  "description": "ChatGPT extension for PII detection using compromise",
+  "scripts": {
+    "build": "webpack --mode production",
+    "test": "node src/pii-filter.test.js"
+  },
+  "dependencies": {
+    "compromise": "^14.10.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.88.0",
+    "webpack-cli": "^5.1.4"
+  }
+} 
